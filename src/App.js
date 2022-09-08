@@ -3,6 +3,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import { Cadastro } from "./pages/cadastro";
 import { Feed } from "./pages/feed";
 
 import { Home } from './pages/home'
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/feed" element={<Feed />} />
+        <Route path="/cadastro" element={<Cadastro />} />
      </Routes >
     </Router>
   );

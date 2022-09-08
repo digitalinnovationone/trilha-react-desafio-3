@@ -1,5 +1,5 @@
 import { useNavigate  } from "react-router-dom";
-import { MdEmail, MdLock } from 'react-icons/md'
+import { MdEmail, MdLock, MdPerson, MdPhone } from 'react-icons/md'
 import { Button } from '../../components/Button';
 import { Header } from '../../components/Header';
 import { Input } from '../../components/Input';
@@ -8,15 +8,11 @@ import { api } from '../../services/api';
 import { useForm } from "react-hook-form";
 
 
-import { Container, Title, Column, TitleLogin, SubtitleLogin, EsqueciText, CriarText, Row, Wrapper } from './styles';
+import { Container, Title, Column, TitleLogin, SubtitleLogin, Text, LoginText, Row, Wrapper } from './styles';
 
-const Login = () => {
+const Cadastro = () => {
 
     const navigate = useNavigate()
-
-    const handleClickEnter = () => {
-        navigate('/feed')
-    }
 
     const { control, handleSubmit, formState: { errors  } } = useForm({
         reValidateMode: 'onChange',
@@ -49,18 +45,26 @@ const Login = () => {
             </Column>
             <Column>
                 <Wrapper>
-                <TitleLogin>Faça seu cadastro</TitleLogin>
-                <SubtitleLogin>Faça seu login e make the change._</SubtitleLogin>
+                <TitleLogin>Comece agora grátis</TitleLogin>
+                <SubtitleLogin>crie sua conta e make the change._</SubtitleLogin>
                 <form onSubmit={handleSubmit(onSubmit)}>
+                    <Input placeholder="Nome completo" leftIcon={<MdPerson />} name="nomecompleto"  control={control} />
+                    {errors.nome && <span>O nome é obrigatório</span>}
                     <Input placeholder="E-mail" leftIcon={<MdEmail />} name="email"  control={control} />
                     {errors.email && <span>E-mail é obrigatório</span>}
+                    <Input type="celular" placeholder="Celular" leftIcon={<MdPhone />}  name="celular" control={control} />
+                    {errors.celular && <span>Celular é obrigatório</span>}
                     <Input type="password" placeholder="Senha" leftIcon={<MdLock />}  name="senha" control={control} />
                     {errors.senha && <span>Senha é obrigatório</span>}
-                    <Button title="Entrar" variant="secondary" type="submit" onClick={handleClickEnter}/>
+                    <Button title="CRIAR MINHA CONTA GRÁTIS" variant="secondary" type="submit"/>
                 </form>
                 <Row>
-                    <EsqueciText>Esqueci minha senha</EsqueciText>
-                    <CriarText>Criar Conta</CriarText>
+                    <Text>Ao clicar em "criar minha conta grátis", declaro que aceito as Políticas de Privacidade e os Termos de Uso da DIO.</Text>
+                </Row>
+                <Row>
+                    <LoginText>Já tenho conta. <a href='/login'>Fazer login.</a>
+                    </LoginText>
+                    
                 </Row>
                 </Wrapper>
             </Column>
@@ -68,4 +72,4 @@ const Login = () => {
     </>)
 }
 
-export { Login }
+export { Cadastro }
