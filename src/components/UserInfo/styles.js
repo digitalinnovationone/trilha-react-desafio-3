@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    display:flex;
+    display: flex;
     flex-direction: row;
     margin-bottom: 24px;
-` 
+`
 
 export const UserPicture = styled.img`
     width: 32px;
@@ -21,7 +21,7 @@ export const NameText = styled.div`
     font-size: 18px;
     line-height: 25px;
     color: #FFFFFF;
-` 
+`
 
 export const Progress = styled.div`
     width: 180px;
@@ -40,4 +40,5 @@ export const Progress = styled.div`
         border-radius: 3px;
         background-color: #23DD7A;
     }
-` 
+
+`

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const CardContainer = styled.div`
+export const CardContariner = styled.div`
     width: 100%;
     background-color: #3B4651;
     position: relative;
@@ -9,7 +9,7 @@ export const CardContainer = styled.div`
 
 export const ImageBackground = styled.img`
     width: 100%;
-    height: 180px;
+    height:180px;
 `
 
 export const Content = styled.div`
@@ -19,7 +19,7 @@ export const Content = styled.div`
     padding: 12px;
 `
 
-export const UserInfo = styled.div`
+export const UserInfor = styled.div`
     display: flex;
     flex-direction: row;
     margin-bottom: 12px;
@@ -28,13 +28,13 @@ export const UserInfo = styled.div`
         margin-left: 12px;
     }
 
-    h4{
+    h4 {
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
         line-height: 25px;
-        color: #FFFFFF;
+        color: #FFFFFF;   
     }
 
     p {
@@ -42,7 +42,7 @@ export const UserInfo = styled.div`
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
-        line-height: 16px;
+        line-weight: 16px;
         color: #FFFFFF;
     }
 `
@@ -55,10 +55,9 @@ export const UserPicture = styled.img`
 `
 
 export const PostInfo = styled.div`
-
     margin-bottom: 12px;
 
-    h4{
+    h4 {
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: 700;
@@ -72,20 +71,20 @@ export const PostInfo = styled.div`
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
-        line-height: 16px;
+        line-weight: 16px;
     }
 `
 
 export const HasInfo = styled.div`
     margin-top: 12px;
 
-    h4{
+    h4 {
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: 700;
         font-size: 12px;
-        line-height: 16px;    
-        color: #FFFFFF80  
+        line-height: 16px;
+        color: #FFFFFF80;
     }
 
     p {
@@ -93,6 +92,6 @@ export const HasInfo = styled.div`
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
-        line-height: 22px;
+        line-weight: 22px;
     }
 `

@@ -1,10 +1,10 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.main`
     width: 100%;
     max-width: 80%;
     margin: 0 auto;
-    margin-top: 120px;
+    margin-top: 88px;
 
     display: flex;
     flex-direction: row;
@@ -16,26 +16,21 @@ export const Title = styled.h3`
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 25px;
-    color: #FFFFFF;
     margin-bottom: 24px;
+    line-height: 25px;
+    color: #FFFF;
 `
 
-export const TitleHighlight = styled.h3`
+export const TitleHighlight = styled.span`
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
+    margin-bottom: 24px;
     line-height: 25px;
     color: #FFFFFF70;
-    margin-bottom: 24px;
-
 `
-
 export const Column = styled.div`
-    flex:${({flex}) => flex};
-    padding-right: 24px;
-
+    flex: ${({flex}) => flex};
+    padding: 40px;
 `
-
-
