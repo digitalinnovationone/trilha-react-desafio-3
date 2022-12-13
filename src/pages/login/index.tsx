@@ -6,7 +6,7 @@ import { Input } from '../../components/Input';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup'
 import { useForm } from "react-hook-form";
-import { Container, Title, Column, TitleLogin, SubtitleLogin, EsqueciText, CriarText, Row, Wrapper, Span } from './styles';
+import { Container, Title, Column, TitleLogin, SubtitleLogin, EsqueciText, CriarText, Row, Wrapper} from './styles';
 import { api } from "../../services/api";
 import { IFormData } from "./types";
 
@@ -56,8 +56,8 @@ const Login = () => {
                         <Button title="Entrar" variant="secondary" type="submit" />
                     </form>
                     <Row>
-                        <EsqueciText>Esqueci minha senha</EsqueciText>
-                        <CriarText>Criar Conta</CriarText>
+                        <EsqueciText onClick={()=> navigate('/')}>Esqueci minha senha</EsqueciText>
+                        <CriarText onClick={()=> navigate('/register')}>Criar Conta</CriarText>
                     </Row>
                 </Wrapper>
             </Column>
