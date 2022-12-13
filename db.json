@@ -1,6 +1,25 @@
 {
-    "users": [
-      { "id": 1, "name": "Pablo", "email": "pablo@email.com", "senha":"123456" },
-      { "id": 2, "name": "José", "email": "jose@email.com", "senha":"123456" }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "name": "Maria Das Graças",
+      "email": "maria@email.com",
+      "senha": "123456"
+    },
+    {
+      "id": 2,
+      "name": "Joana Da Silva",
+      "email": "joana@email.com",
+      "senha": "12345678"
+    },
+    {
+      "id": 3,
+      "name": "Mylena Verspeelt",
+      "email": "mylena@email.com",
+      "senha": "12345"
+    },
+    {
+      "id": 4
+    }
+  ]
 }
