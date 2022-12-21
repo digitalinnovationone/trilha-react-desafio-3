@@ -12,9 +12,9 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.33.1",
     "react-icons": "^4.4.0",
-    "react-router-dom": "^6.3.0",
+    "react-router-dom": "^6.5.0",
     "react-scripts": "5.0.1",
-    "styled-components": "^5.3.5",
+    "styled-components": "^5.3.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -22,7 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "api": "json-server --watch db.json -p 8001" 
+    "api": "json-server --watch db.json -p 8001"
   },
   "eslintConfig": {
     "extends": [
