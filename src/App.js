@@ -16,10 +16,10 @@ function App() {
   return (
   <Router>
     <Routes>
-      <Route path="/" element= {<Home />}/>
-      <Route path="/login" element= {<Login />}/>
-      <Route path="/feed" element= {<Feed />}/>
-      <Route path="/register" element= {<Register />}/>
+      <Route path="Plataforma-Dio/" element= {<Home />}/>
+      <Route path="Plataforma-Dio/login" element= {<Login />}/>
+      <Route path="Plataforma-Dio/feed" element= {<Feed />}/>
+      <Route path="Plataforma-Dio/register" element= {<Register />}/>
     </Routes>
   </Router>
   );
