@@ -21,10 +21,10 @@ const Header = ({autenticado}) => {
     
     const navigate = useNavigate();
     const handleClickSignIn = () => {
-        navigate('/login')
+        navigate('/Plataforma-Dio/login')
     }
     const handleClickRegister = () => {
-        navigate('/register')
+        navigate('/Plataforma-Dio/register')
     }
 
 
@@ -48,7 +48,7 @@ const Header = ({autenticado}) => {
                         <UserPicture src="https://avatars.githubusercontent.com/u/45184516?v=4" />
                     ) : (
                         <>
-                        <MenuRight href="/">Home</MenuRight>
+                        <MenuRight href="/Plataforma-Dio/">Home</MenuRight>
                         <Button tittle="Entrar" onClick={handleClickSignIn}/>
                         <Button tittle="Cadastrar" onClick={handleClickRegister}/>
                         </>

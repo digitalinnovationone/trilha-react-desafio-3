@@ -14,14 +14,14 @@ import { Column, Container, CriarText, EsqueciText, Row, SubTitleLogin, Title, T
 const schema = yup.object({
     email: yup.string().email('Este email não é válido').required('Campo obrigatório'),
     password: yup.string().min(3, 'No mínimo 3 caracteres').required('Campo obrigatório'),
-  }).required();
+    }).required();
 
 
 const Login = () => {
     const navigate = useNavigate();
 
     const handleClickRegister = () => {
-        navigate('/register')
+        navigate('/Plataforma-Dio/register')
     }
 
     const { control, handleSubmit, formState: { errors } } = useForm({
@@ -33,7 +33,7 @@ const Login = () => {
         try{
             const { data } = await api.get(`users?email=${formData.email}&senha=${formData.password}`);
             if (data.length === 1){
-                navigate('/feed');
+                navigate('/Plataforma-Dio/feed');
             } else {
                 alert('Email e/ou senha inválidos.');
             }

@@ -16,7 +16,7 @@ const schema = yup.object({
     name: yup.string().required('Campo obrigatório'),
     email: yup.string().email('Este email não é válido').required('Campo obrigatório'),
     password: yup.string().min(3, 'No minimo 3 caracteres').required('Campo obrigatório'),
-  }).required();
+    }).required();
 
 const Register = () => {
     const navigate = useNavigate();
@@ -33,7 +33,7 @@ const Register = () => {
                 console.log(api);
                 await api.post('/users', { id: api.length, name: formData.name, email: formData.email, senha: formData.password });
                 console.log(api);
-                navigate('/login');
+                navigate('/Plataforma-Dio/login');
             } else {
                 alert("Não foi possível criar sua conta com este email, talvez você já esteja cadastrado.");
             }
@@ -44,7 +44,7 @@ const Register = () => {
 
 
     const handleClickSignIn = () => {
-        navigate('/login')
+        navigate('/Plataforma-Dio/login')
     }
 
 
