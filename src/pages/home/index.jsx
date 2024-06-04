@@ -3,7 +3,6 @@ import bannerImage from '../../assets/banner.png'
 
 import { Button } from '../../components/Button';
 
-import { Header } from '../../components/Header';
 
 import { Container, Title, TitleHighlight, TextContent } from './styles';
 
@@ -16,7 +15,6 @@ const Home = () => {
     }
 
     return (<>
-        <Header />
         <Container>
             <div>
                 <Title>

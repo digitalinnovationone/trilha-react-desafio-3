@@ -1,7 +1,6 @@
 import { useNavigate  } from "react-router-dom";
 import { MdEmail, MdLock } from 'react-icons/md'
 import { Button } from '../../components/Button';
-import { Header } from '../../components/Header';
 import { Input } from '../../components/Input';
 import { api } from '../../services/api';
 
@@ -37,7 +36,6 @@ const Login = () => {
     console.log('errors', errors);
 
     return (<>
-        <Header />
         <Container>
             <Column>
                 <Title>A plataforma para você aprender com experts, dominar as principais tecnologias
