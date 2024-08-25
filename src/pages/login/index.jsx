@@ -1,7 +1,6 @@
 import { useNavigate  } from "react-router-dom";
 import { MdEmail, MdLock } from 'react-icons/md'
 import { Button } from '../../components/Button';
-import { Header } from '../../components/Header';
 import { Input } from '../../components/Input';
 import { api } from '../../services/api';
 
@@ -34,10 +33,13 @@ const Login = () => {
         }
     };
 
+    const handleClickCreateAccount = () => {
+        navigate('/cadastro')
+    }
+
     console.log('errors', errors);
 
     return (<>
-        <Header />
         <Container>
             <Column>
                 <Title>A plataforma para você aprender com experts, dominar as principais tecnologias
@@ -56,7 +58,7 @@ const Login = () => {
                 </form>
                 <Row>
                     <EsqueciText>Esqueci minha senha</EsqueciText>
-                    <CriarText>Criar Conta</CriarText>
+                    <CriarText onClick={handleClickCreateAccount}>Criar Conta</CriarText>
                 </Row>
                 </Wrapper>
             </Column>
