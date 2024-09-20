@@ -19,6 +19,10 @@ const Login = () => {
         mode: 'onChange',
     });
 
+    const handleClickRegister = () => {
+        navigate('/Register')
+    }
+
     const onSubmit = async (formData) => {
         try{
             const {data} = await api.get(`/users?email=${formData.email}&senha=${formData.senha}`);
@@ -30,7 +34,7 @@ const Login = () => {
 
             alert('Usuário ou senha inválido')
         }catch(e){
-            //TODO: HOUVE UM ERRO
+            throw new Error(e);
         }
     };
 
@@ -56,7 +60,7 @@ const Login = () => {
                 </form>
                 <Row>
                     <EsqueciText>Esqueci minha senha</EsqueciText>
-                    <CriarText>Criar Conta</CriarText>
+                    <CriarText  onClick={handleClickRegister}>Criar Conta</CriarText>
                 </Row>
                 </Wrapper>
             </Column>
