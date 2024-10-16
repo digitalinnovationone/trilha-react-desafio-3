@@ -6,6 +6,7 @@ import { Button } from '../Button';
 import { Container, Wrapper, BuscarInputContainer, Input, Row, Menu, MenuRight, UserPicture} from './styles';
 
 const Header = ({autenticado}) => {
+  
   return (
     <Wrapper>
       <Container>

@@ -36,6 +36,9 @@ const Login = () => {
 
     console.log('errors', errors);
 
+    const handleCadastro = () => {
+        navigate('/cadastro');
+    };
     return (<>
         <Header />
         <Container>
@@ -56,7 +59,7 @@ const Login = () => {
                 </form>
                 <Row>
                     <EsqueciText>Esqueci minha senha</EsqueciText>
-                    <CriarText>Criar Conta</CriarText>
+                    <CriarText onClick={handleCadastro}>Criar Conta</CriarText>
                 </Row>
                 </Wrapper>
             </Column>
