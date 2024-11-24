@@ -16,7 +16,9 @@ const Home = () => {
     }
 
     return (<>
-        <Header />
+        <Header>
+        <title>DIO</title>    
+        </Header>
         <Container>
             <div>
                 <Title>
