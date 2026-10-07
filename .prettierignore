@@ -1,0 +1,6 @@
+node_modules
+build
+coverage
+db.json
+yarn.lock
+docs
